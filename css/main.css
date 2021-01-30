@@ -1,10 +1,12 @@
+
+
 html {
   font-size: 62.5%;
 }
 
 body {
   position: relative;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
   margin: 0;
@@ -47,7 +49,7 @@ h2 {
   justify-content: left;
   align-content: center;
   background-color: #d4eac2;
-  padding: 3.3rem 0;
+  padding: 3rem 0;
   margin: 0;
 }
 
@@ -55,7 +57,7 @@ h2 {
   color: rgb(37, 37, 37);
   text-decoration: none;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 4rem;
   letter-spacing: 3px;
   margin-left: 5rem;
   margin-right: 2rem;
@@ -98,9 +100,39 @@ h2 {
 /* WELCOME PAGE */
 
 .banner-img {
+  position: relative;
   height: 100vh;
   background: url(images/coffeeshop.jpg) no-repeat;
   background-size: cover;
+}
+
+.dark-sheet {
+  height: 100vh;
+  background-color: rgba(53, 53, 53, 20%);
+}
+
+.tagline, .location {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  color: rgb(218, 218, 218);
+  text-shadow: 2px 2px 3.5px black;
+}
+
+.tagline {
+  line-height: 10rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 27rem 4rem 0;
+  font-size: 7rem;
+}
+
+.location {
+  position: absolute;
+  margin-right: 3rem;
+  padding: 0;
+  font-size: 5rem;
+  right: 0;
+  bottom: 12rem;
 }
 
 /* ABOUT PAGE */
@@ -453,10 +485,6 @@ textarea {
     font-size: 2rem;
   }
 
-  .nav-bar .links {
-    padding: 3.5rem 0;
-  }
-
   /* CAFE + MENU */
 
   #cafe-menu .a-note-on-payment div {
@@ -488,7 +516,8 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
+
   .nav-bar .links .liminal-icon {
     font-size: 3rem;
   }
@@ -498,8 +527,9 @@ textarea {
     font-size: 1.7rem;
   }
 
-  .nav-bar .links {
-    padding: 4rem 0;
+  .tagline {
+    font-size: 5.5rem;
+    line-height: 7.5rem;
   }
 
   /* CAFE + MENU */
@@ -600,7 +630,12 @@ textarea {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 865px) {
+
+  .location {
+    bottom: 16rem;
+  }
+
   /* NAVIGATION */
 
   .nav-bar .links .sublink {
@@ -615,10 +650,11 @@ textarea {
   .nav-bar .links .bars-icon {
     display: block;
     margin-left: 5rem;
+    margin-top: .4rem;
   }
 
   .nav-bar .links .liminal-icon {
-    font-size: 5rem;
+    font-size: 4.8rem;
     margin-right: 5rem;
     margin-left: 0;
   }
@@ -695,6 +731,11 @@ textarea {
     background-position: -230px;
   }
 
+  .tagline {
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+
   /* CONTACT PAGE */
 
   #contact fieldset {
@@ -722,9 +763,15 @@ textarea {
   .banner-img {
     background-position: 0px;
   }
+
 }
 
 @media screen and (max-width: 500px) {
+
+  .location {
+    bottom: 14rem;
+  }
+
   .vertical-links a {
     font-size: 4rem;
   }
@@ -732,10 +779,11 @@ textarea {
   .nav-bar .links .bars-icon {
     display: block;
     margin-left: 3rem;
+    margin-top: .8rem;
   }
 
   .nav-bar .links .liminal-icon {
-    font-size: 3.8rem;
+    font-size: 4.2rem;
     margin-right: 3rem;
   }
 
@@ -766,4 +814,6 @@ textarea {
   .banner-img {
     background-position: 0px;
   }
+
 }
+
