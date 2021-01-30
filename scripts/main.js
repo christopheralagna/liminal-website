@@ -41,14 +41,16 @@ verticalNavQuery.addListener(handleNavChange);
 
 handleNavChange(verticalNavQuery);
 
+/*
+
 function handleIconChange(e) {
 
   if (barsIconSizeQuery.matches) {
-    barsIcon.classList.remove('fa-4x');
-    barsIcon.classList.add('fa-3x');
+    barsIcon.classList.remove('fa-2x');
+    barsIcon.classList.add('fa-2x');
   } else {
-    barsIcon.classList.remove('fa-3x');
-    barsIcon.classList.add('fa-4x');
+    barsIcon.classList.remove('fa-2x');
+    barsIcon.classList.add('fa-2x');
   }
 
 }
@@ -56,6 +58,8 @@ function handleIconChange(e) {
 barsIconSizeQuery.addListener(handleIconChange);
 
 handleIconChange(barsIconSizeQuery);
+
+*/
 
 
 
