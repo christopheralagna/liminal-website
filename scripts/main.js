@@ -10,14 +10,14 @@ const verticalNavQuery = window.matchMedia('(min-width: 850px)');
 function verticalNav() {
   section.style.display = "none";
   navBar.style.position = "relative";
-  links.style.cssText = "height: 12vh; align-items: center; padding-bottom: 0";
+  links.style.cssText = "height: 12vh; align-items: center; padding: 0";
   verticalLinks.style.cssText = "display: flex; height: 88vh";
 }
 
 function navBarReturn() {
   section.style.display = "block";
   navBar.style.position = "fixed";
-  links.style.cssText = "padding-bottom: 3rem";
+  links.style.cssText = "padding: 3rem, auto";
   verticalLinks.style.cssText = "display: none";
 }
 
