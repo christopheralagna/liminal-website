@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,6 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/80f218d965.js" crossorigin="anonymous"></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfUgvPpZmCSQ5zrv3ZtmcAuIZts07mxBY&map_ids=1b35a3a4366c83c8&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
 </head>
 <body>
 
@@ -15,33 +20,43 @@
     <div class="flower2-img"></div>
     <div class="get-in-touch">
       <h2>Get in touch!</h2>
-      <form>
+      <form action="POST" data-netlify="true">
         <fieldset>
           <div class='form-group'>
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" required>
+            <input type="text" name="first-name" id="first-name" required>
           </div>
           <div class='form-group'>
             <label for="last-name">Last Name (optional)</label>
-            <input type="text" id="last-name">
+            <input type="text" name="last-name" id="last-name">
           </div>
         </fieldset>
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" required>
+          <input type="email" name="email" id="email" required>
         </div>
         <div class="form-group">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" required>
+          <input type="text" name="subject" id="subject" required>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea name="messagae" id="message" cols="30" rows="10" required></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form-group">
+          <div data-netlify-recaptcha="true"></div>
         </div>
         <div class='form-group button'>
           <button type="submit">SUBMIT</button>
         </div>
       </form>
+    </div>
+    <div class="location">
+      <div class="location-info">
+        <h2>Address:</h2>
+        <p>217 S. San Francisco Street<br>Flagstaff, Az, 86001</p>
+      </div>
+      <div id="map"></div>
     </div>
     <div class="flower-container">
       <div class="flower-img"></div>
