@@ -76,6 +76,23 @@ p, li, label, input, textarea {
   word-spacing: 0.1rem;
 }
 
+p::selection,
+a::selection,
+li::selection,
+label::selection,
+input::selection,
+br::selection,
+b::selection,
+i::selection,
+button::selection,
+textarea::selection,
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection {
+  background-color: var(--color-nav);
+}
+
 .p-larger {
   font-size: 1.8rem;
   font-weight: 300;
@@ -117,6 +134,7 @@ ul {
   letter-spacing: 3px;
   width: 17.5vw;
   text-align: center;
+  cursor: default;
 }
 
 .nav-bar .links .first-sublink .first-anchor {
@@ -251,7 +269,7 @@ ul {
   background-size: cover;
   background-position: 0 -200px;
   width: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   height: 20rem;
 }
 
@@ -344,6 +362,8 @@ ul {
 
 label {
   display: block;
+  font-weight: 600;
+  color: var(--black-secondary);
 }
 
 button {
@@ -351,7 +371,7 @@ button {
   background-color: var(--black-primary);
   color: white;
   border: none;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   border-radius: 3px;
   outline: 0;
   cursor: pointer;
@@ -377,18 +397,19 @@ textarea {
   font-family: "montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   font-weight: 300;
-  border: 1px solid #ccc;
+  border: none;
+  box-shadow: 0 0 4px black;
   border-radius: 5px;
   padding: 0.8rem 1rem;
   transition: box-shadow 0.15s;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(236, 236, 236);
 }
 
 input:focus,
 textarea:focus {
   font-family: "montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   outline: 0;
-  box-shadow: 0 0 0 2px rgb(24, 117, 255, 0.25);
+  border: 1px solid var(--black-tertiary);
 }
 
 input[id="last-name"],
@@ -416,19 +437,35 @@ textarea {
 
 #map {
   height: 400px;
-  width: 100%;
+  width: 400px;
   border-radius: 10px;
-  box-shadow: 0 0 5px grey;
+  box-shadow: 0 0 5px black;
 }
 
 .location {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0;
+  margin: 3rem 0 6rem;
 }
 
-.location-info {
-  flex-basis: 35%;
+.location-info p {
+  font-size: 1.8rem;
+}
+
+
+
+.instagram-link {
+  color: var(--black-primary);
+}
+
+.instagram-link:hover {
+  color: var(--black-secondary);
+}
+
+.form-submit {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
 }
 
 /* BLOG PAGE */
@@ -526,6 +563,7 @@ textarea {
   #cafe-menu h2 {
     margin-bottom: 3rem;
   }
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -629,14 +667,21 @@ textarea {
 
   #contact .get-in-touch {
     display: block;
+    margin-bottom: 6rem;
   }
 
   #contact fieldset {
     margin-top: 3rem;
   }
 
-  #contact .button {
+  #contact .form-submit {
     margin-bottom: 3rem;
+  }
+
+  /* LOCATION */
+
+  .location {
+    display: block;
   }
 
 }
@@ -664,6 +709,7 @@ textarea {
     height: 20rem;
     margin-bottom: 3rem;
   }
+
 }
 
 @media screen and (max-width: 865px) {
@@ -683,6 +729,7 @@ textarea {
     display: block;
     margin-left: 5rem;
     line-height: 3rem;
+    cursor: pointer;
   }
 
   .nav-bar .links .liminal-icon {
