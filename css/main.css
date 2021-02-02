@@ -20,9 +20,9 @@
   --nav-bar-height-2: calc((var(--links-padding-2) * 2) + var(--icon-size-2));
 
   /* CALCULATE NAVBAR SIZING AND MARGINS */
-  --sublink-size-3: 1.8rem;
+  --sublink-size-3: 1.5rem;
   --links-padding-3: 1rem;
-  --icon-size-3: 2.5rem;
+  --icon-size-3: 2rem;
   --nav-bar-height-3: calc((var(--links-padding-3) * 2) + var(--icon-size-3));
 
     /* CALCULATE NAVBAR SIZING AND MARGINS */
@@ -38,7 +38,7 @@ html {
 
 body {
   position: relative;
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   background-color: var(--webpage-color);
@@ -52,6 +52,7 @@ h1 {
   font-size: 4rem;
   font-weight: 400;
   line-height: 4rem;
+  margin: auto 0 6rem;
 }
 
 h2 {
@@ -62,10 +63,12 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 3rem;
+  margin: 0 0 1.5rem;
 }
 
-p, li, label {
+p, li, label, input {
   color: var(--black-primary);
   font-size: 1.5rem;
   letter-spacing: 0;
@@ -111,21 +114,23 @@ ul {
   text-decoration: none;
   font-weight: 700;
   font-size: var(--icon-size);
-  
   letter-spacing: 3px;
-  margin-left: 5rem;
-  margin-right: 2rem;
+  width: 17.5vw;
+  text-align: center;
+}
+
+.nav-bar .links .first-sublink .first-anchor {
+  margin-left: 0;
 }
 
 .nav-bar .links .sublink a {
-  margin: 0 2.5rem;
+  margin: 0 2rem;
   color: var(--black-tertiary);
   /* bottom padding is for underline (border-bottom) on hover */
   padding-bottom: 0.2rem;
   text-decoration: none;
   transition: color 0.8s;
   font-size: var(--sublink-size);
-  
 }
 
 .nav-bar .links .sublink a:hover {
@@ -196,20 +201,13 @@ ul {
   grid-template-rows: auto;
   /*grid-template-rows: 5rem repeat(5, 17rem) 5rem;*/
   grid-template-areas:
-    "header        ."
     "the-name      fern-img"
-    "what-we-are   fern-img"
     "what-we-offer fern-img"
     "the-mission   fern-img"
     "theory-praxis fern-img"
     ".             fern-img";
-  column-gap: 3rem;
-  row-gap: 3rem;
-}
-
-.about-page-grid h3 {
-  font-weight: 700;
-  margin: 0;
+  column-gap: 10rem;
+  row-gap: 1.5rem;
 }
 
 .about-page-grid h1 {
@@ -219,6 +217,11 @@ ul {
 .about-page-grid p {
   width: auto;
   margin: 0;
+}
+
+.about-page-grid .h3-smaller {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .about-page-grid .header {
@@ -290,7 +293,7 @@ ul {
   background-size: cover;
   background-position: 0 -100px;
   height: 40rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 /* CAFE + MENU */
@@ -316,6 +319,10 @@ ul {
   border-bottom: 1px solid grey;
   margin-top: 3rem;
   padding-bottom: 0;
+}
+
+#cafe-menu .small-plate {
+  margin-bottom: 0;
 }
 
 #cafe-menu .small-plates .list {
@@ -383,7 +390,6 @@ fieldset div {
 
 input,
 textarea {
-  font-family: "Lato";
   font-size: 2rem;
   font-weight: 300;
   border: 1px solid #ccc;
@@ -425,23 +431,29 @@ textarea {
 /* BLOG PAGE */
 
 #blog .blog-post {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 3rem auto;
   border-top: 1px solid grey;
 }
 
 #blog .blog-post p {
-  font-size: 1.5rem;
   margin: 2rem 0;
 }
 
+#blog .blog-post .post-author {
+  font-weight: 700;
+  margin-top: 0;
+}
+
 #blog .blog-post h2 {
-  font-weight: 400;
+  font-weight: 700;
   margin: 3rem auto;
   line-height: 3.5rem;
 }
 
 #blog .blog-post h3 {
   margin: 0 0 2rem;
+  font-size: 1.5rem;
 }
 
 #blog .blog-post .post-content {
@@ -541,7 +553,7 @@ textarea {
 
   .nav-bar .links .liminal-icon {
     font-size: var(--icon-size-3);
-    line-height: var(--icon-size-3);
+    line-height: auto;
   }
 
   .nav-bar .links .sublink a {
