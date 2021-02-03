@@ -841,14 +841,15 @@ textarea {
 
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-height: 475px){
 
-  .recaptcha {
-    width: 100%;
+  #rc-imageselect, 
+  .g-recaptcha {
+    transform:scale(0.77);
+    transform-origin: 0 0;
   }
 
 }
-
 
 @media screen and (max-width: 700px) and (max-height: 625px) {
   /* BANNER IMG */
