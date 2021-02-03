@@ -841,11 +841,11 @@ textarea {
 
 }
 
-@media screen and (max-height: 475px){
+@media screen and (max-width: 475px){
 
   #rc-imageselect, 
   .g-recaptcha {
-    transform:scale(0.77);
+    transform:scale(0.7);
     transform-origin: 0 0;
   }
 
