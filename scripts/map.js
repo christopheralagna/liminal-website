@@ -24,7 +24,9 @@ window.initMap = function() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 18,
     center: headSpace,
-    mapId: '1b35a3a4366c83c8'
+    mapId: '1b35a3a4366c83c8',
+    mapTypeControl: false,
+    streetViewControl: false,
   });
   const marker = new google.maps.Marker({
     position: headSpace,

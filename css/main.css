@@ -835,6 +835,12 @@ textarea {
   input[id="first-name"] {
     width: 100%;
   }
+
+  #map {
+    height: 200px;
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 700px) and (max-height: 625px) {
