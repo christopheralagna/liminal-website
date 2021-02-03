@@ -246,7 +246,7 @@ ul {
 
 .about-page-grid .fern-img {
   grid-area: fern-img;
-  background: url(images/ferns.jpg) no-repeat;
+  background: url(images/ferns-smaller.jpg) no-repeat;
   background-size: cover;
   background-position: -150px;
 }
@@ -265,7 +265,7 @@ ul {
 }
 
 .flower2-img {
-  background: url(images/flower2.jpg) no-repeat;
+  background: url(images/flower2-smaller.jpg) no-repeat;
   background-size: cover;
   background-position: 0 -200px;
   width: auto;
@@ -274,7 +274,7 @@ ul {
 }
 
 .oranges-img {
-  background: url(images/oranges.jpg) no-repeat;
+  background: url(images/oranges-smaller.jpg) no-repeat;
   background-size: cover;
   background-position: 0 -200px;
   width: auto;
@@ -523,7 +523,7 @@ textarea {
 }
 
 .succulents-img {
-  background: url(images/succulents.jpg) no-repeat;
+  background: url(images/succulents-smaller.jpg) no-repeat;
   background-size: cover;
   height: 30rem;
   width: 30rem;
@@ -703,9 +703,8 @@ textarea {
   }
 
   .fern-rotated-img {
-    background: url(images/ferns-rotated.jpeg) no-repeat;
+    background: url(images/ferns-smaller.jpg) no-repeat;
     background-size: cover;
-    width: auto;
     height: 20rem;
     margin-bottom: 3rem;
   }
@@ -749,12 +748,11 @@ textarea {
     margin: 0;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0;
   }
 
   .vertical-links li {
-    margin: 3rem 0;
     list-style-type: none;
   }
 
@@ -843,29 +841,12 @@ textarea {
 
 }
 
-@media screen and (max-height: 700px) {
-
-  /* NAV-BAR */
-
-  .vertical-links li {
-    margin: 2rem 0;
-  }
-
-}
 
 @media screen and (max-width: 700px) and (max-height: 625px) {
   /* BANNER IMG */
 
   .banner-img {
     background-position: 0px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-
-  .vertical-links a {
-    font-size: 3.5rem;
   }
 
 }
