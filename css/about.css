@@ -13,7 +13,10 @@
   margin-bottom: 0;
 }
 
-.block .purpose {
-  margin-left: 6rem;
-  margin-right: 6rem;
+.block ul {
+  list-style-type: disc;
+}
+
+.block li {
+  margin-top: 1.5rem;
 }
