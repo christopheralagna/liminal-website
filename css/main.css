@@ -190,6 +190,7 @@ ul {
 .webpage-container {
   width: 65vw;
   margin: 7rem auto calc(var(--nav-bar-height) + var(--flower-padding-top));
+  min-width: 275px;
 }
 
 
@@ -1101,6 +1102,14 @@ textarea {
   #donate h3 {
     margin: 3rem 0 1rem;
   }
+
+  /* CAFE */
+
+  #cafe-menu h2 {
+    margin-bottom: 3rem;
+  }
+
+  /* BLOG */
 
   .blog-post {
     margin: 1.5rem 0 !important;
