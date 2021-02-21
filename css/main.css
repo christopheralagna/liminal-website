@@ -189,7 +189,7 @@ ul {
 
 .webpage-container {
   width: 65vw;
-  margin: 7rem auto calc(var(--nav-bar-height) + var(--flower-padding-top));
+  margin: 6rem auto calc(var(--nav-bar-height) + var(--flower-padding-top));
 }
 
 
@@ -647,7 +647,7 @@ textarea {
   }
 
   .webpage-container {
-    margin: 7rem auto calc(var(--nav-bar-height-4) + var(--flower-padding-top));
+    margin: 6rem auto calc(var(--nav-bar-height-4) + var(--flower-padding-top));
   }
 
   .vertical-links {
@@ -692,7 +692,7 @@ textarea {
   }
 
   .webpage-container {
-    margin: 7rem auto calc(var(--nav-bar-height-2) + var(--flower-padding-top));
+    margin: 6rem auto calc(var(--nav-bar-height-2) + var(--flower-padding-top));
   }
 
   /* CAFE + MENU */
@@ -810,7 +810,7 @@ textarea {
   }
 
   .webpage-container {
-    margin: 7rem auto calc(var(--nav-bar-height-3) + var(--flower-padding-top));
+    margin: 3rem auto calc(var(--nav-bar-height-3) + var(--flower-padding-top));
   }
 
   .tagline {
@@ -1046,6 +1046,7 @@ textarea {
 
   .webpage-container {
     width: 92vw;
+    margin-top: 2rem;
   }
 
   .vertical-links a {
