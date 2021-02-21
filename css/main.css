@@ -141,18 +141,35 @@ ul {
   cursor: default;
 }
 
-.nav-bar .links .first-sublink .first-anchor {
+.nav-bar .links .first-anchor {
   margin-left: 0;
 }
 
+.nav-bar .links .first-sublink {
+  margin-left: 0 !important;
+}
+
 .nav-bar .links .sublink a {
-  margin: 0 2rem;
   color: var(--black-tertiary);
   /* bottom padding is for underline (border-bottom) on hover */
   padding-bottom: 0.2rem;
   text-decoration: none;
   transition: color 0.8s;
   font-size: var(--sublink-size);
+}
+
+.nav-bar .links .sublink {
+  margin: 0 2rem;
+}
+
+.nav-bar .links .current-link {
+  font-weight: 800;
+  cursor: default;
+}
+
+.nav-bar .vertical-links .current-link {
+  font-weight: 600;
+  cursor: default;
 }
 
 .nav-bar .links .sublink a:hover {
@@ -631,13 +648,13 @@ textarea {
 
   .vertical-links li {
     list-style-type: none;
+    font-size: 3.5rem;
   }
 
   .vertical-links a {
     text-decoration: none;
     color: rgb(94, 94, 94);
     transition: color 0.8s;
-    font-size: 3.5rem;
   }
 
   .vertical-links a:hover {
