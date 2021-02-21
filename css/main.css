@@ -190,7 +190,6 @@ ul {
 .webpage-container {
   width: 65vw;
   margin: 7rem auto calc(var(--nav-bar-height) + var(--flower-padding-top));
-  min-width: 275px;
 }
 
 
@@ -926,6 +925,10 @@ textarea {
     display: block;
   }
 
+  .webpage-container {
+    width: 85vw;
+  }
+
   .about-page-grid p {
     margin-bottom: 3rem;
     width: 100%;
@@ -1041,6 +1044,10 @@ textarea {
 
 @media screen and (max-width: 475px){
 
+  .webpage-container {
+    width: 92vw;
+  }
+
   .vertical-links a {
     font-size: 2.2rem;
   }
@@ -1092,7 +1099,7 @@ textarea {
 
   .block li {
     padding-left: 0;
-    list-style-type: disc;
+    list-style-type: none;
   }
 
   ul {
@@ -1107,6 +1114,17 @@ textarea {
 
   #cafe-menu h2 {
     margin-bottom: 3rem;
+  }
+
+  #cafe-menu .beverages .list {
+    text-align: left;
+    list-style-type: none;
+  }
+
+  /* VOLUNTEER */
+
+  .material-donations-list {
+    list-style-type: none;
   }
 
   /* BLOG */
