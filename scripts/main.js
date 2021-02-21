@@ -6,7 +6,7 @@ const verticalLinks = document.querySelector('.vertical-links');
 const section = document.querySelector('section');
 const body = document.querySelector('body');
 const barsIconSizeQuery = window.matchMedia('(max-width: 500px)');
-const verticalNavQuery = window.matchMedia('(min-width: 850px)');
+const verticalNavQuery = window.matchMedia('(min-width: 1250px)');
 
 function verticalNav() {
   section.style.display = "none";

@@ -3,30 +3,30 @@
   --black-primary: rgb(56, 56, 56);
   --black-secondary: rgb(27,27,27);
   --black-tertiary: rgb(87, 87, 87);
-  --webpage-color: rgb(246, 250, 244);
+  --webpage-color: rgb(250, 255, 249);
   --color-nav: #d4eac2;
 
   --flower-padding-top: 6rem;
   /* CALCULATE NAVBAR SIZING AND MARGINS */
-  --sublink-size: 1.8rem;
+  --sublink-size: 1.6rem;
   --links-padding: 1rem;
-  --icon-size: 2.5rem;
+  --icon-size: 2.8rem;
   --nav-bar-height: calc((var(--links-padding) * 2) + var(--icon-size));
 
   /* CALCULATE NAVBAR SIZING AND MARGINS */
-  --sublink-size-2: 1.8rem;
+  --sublink-size-2: 1.6rem;
   --links-padding-2: 1rem;
-  --icon-size-2: 2.5rem;
+  --icon-size-2: 2.8rem;
   --nav-bar-height-2: calc((var(--links-padding-2) * 2) + var(--icon-size-2));
 
   /* CALCULATE NAVBAR SIZING AND MARGINS */
-  --sublink-size-3: 1.5rem;
+  --sublink-size-3: 1.6rem;
   --links-padding-3: 1rem;
-  --icon-size-3: 2rem;
+  --icon-size-3: 2.8rem;
   --nav-bar-height-3: calc((var(--links-padding-3) * 2) + var(--icon-size-3));
 
     /* CALCULATE NAVBAR SIZING AND MARGINS */
-    --links-padding-4: 1.5rem;
+    --links-padding-4: 1.6rem;
     --icon-size-4: 2.8rem;
     --nav-bar-height-4: calc((var(--links-padding-4) * 2) + var(--icon-size-4));
 
@@ -98,6 +98,10 @@ h3::selection {
   font-weight: 300;
   line-height: 3rem;
   margin: 3rem auto;
+}
+
+.p-larger a:hover {
+  color: rgb(163, 99, 163);
 }
 
 ul {
@@ -176,14 +180,26 @@ ul {
 
 .banner-img {
   position: relative;
+  width: 100%;
   height: 100vh;
   background: url(images/coffeeshop.jpg) no-repeat;
   background-size: cover;
+  background-position: 0;
 }
 
 .dark-sheet {
   height: 100vh;
   background-color: rgba(53, 53, 53, 20%);
+}
+
+/* VOLUNTEER PAGE */
+
+.material-donations-list {
+  list-style-type: disc;
+}
+
+.material-donations-list li {
+  margin-bottom: 1.5rem;
 }
 
 /* ABOUT PAGE */
@@ -282,12 +298,38 @@ ul {
   height: 20rem;
 }
 
+.books-img {
+  background: url(images/books.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+  width: auto;
+  margin-bottom: 3rem;
+  height: 20rem;
+}
+
 .blog-post-one-img {
   background: url(images/blog-post-one.jpg) no-repeat;
   background-size: cover;
   background-position: 0 -100px;
   height: 40rem;
   margin: 3rem 0;
+}
+
+.blog-post-two-img {
+  background: url(images/blog-post-two.png) no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 40rem;
+  margin: 3rem 0;
+}
+
+.aspens-img {
+  background: url(images/aspens.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+  width: auto;
+  margin-bottom: 3rem;
+  height: 20rem;
 }
 
 /* CAFE + MENU */
@@ -339,6 +381,19 @@ ul {
 
 #cafe-menu .a-note-on-payment div {
   flex-basis: 60%;
+}
+
+/* CLASSES + WORKSHOPS */
+
+.community-education-description .post-content {
+  margin: 3rem 0;
+  column-count: 2;
+  column-gap: 5rem;
+}
+
+.community-education-description {
+  margin: 3rem auto;
+  border-top: 1px solid grey;
 }
 
 /* CONTACT PAGE */
@@ -470,39 +525,39 @@ textarea {
 
 /* BLOG PAGE */
 
-#blog .blog-post {
+.blog-post {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 3rem auto;
   border-top: 1px solid grey;
 }
 
-#blog .blog-post p {
+.blog-post p {
   margin: 2rem 0;
 }
 
-#blog .blog-post .post-author {
+.blog-post .post-author {
   font-weight: 700;
   margin-top: 0;
 }
 
-#blog .blog-post h2 {
+.blog-post h2 {
   font-weight: 700;
   margin: 3rem auto;
   line-height: 3.5rem;
 }
 
-#blog .blog-post h3 {
+.blog-post h3 {
   margin: 0 0 2rem;
   font-size: 1.5rem;
 }
 
-#blog .blog-post .post-content {
+.blog-post .post-content {
   margin: 3rem 0;
   column-count: 2;
   column-gap: 5rem;
 }
 
-#blog .blog-post .date {
+.blog-post .date {
   column-span: all;
   margin: 2rem 0 0;
   text-align: right;
@@ -534,6 +589,62 @@ textarea {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1250px) {
+
+  /* NAVIGATION */
+
+  .nav-bar .links .sublink {
+    display: none;
+  }
+
+  .nav-bar .links {
+    justify-content: space-between;
+    padding: var(--links-padding-4) 0;
+  }
+
+  .nav-bar .links .bars-icon {
+    display: block;
+    margin-left: 5rem;
+    line-height: 3rem;
+    cursor: pointer;
+  }
+
+  .nav-bar .links .liminal-icon {
+    font-size: var(--icon-size-4);
+    margin-right: 5rem;
+    margin-left: 0;
+    line-height: 3rem;
+    width: auto;
+  }
+
+  .webpage-container {
+    margin: 7rem auto calc(var(--nav-bar-height-4) + var(--flower-padding-top));
+  }
+
+  .vertical-links {
+    background-color: var(--color-nav);
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .vertical-links li {
+    list-style-type: none;
+  }
+
+  .vertical-links a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    transition: color 0.8s;
+    font-size: 3.5rem;
+  }
+
+  .vertical-links a:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+  }
+
   /* NAVIGATION BAR */
 
   .nav-bar .links {
@@ -567,6 +678,7 @@ textarea {
 }
 
 @media screen and (max-width: 1150px) {
+  
   #cafe-menu .small-plates {
     display: flex;
     justify-content: space-between;
@@ -584,6 +696,19 @@ textarea {
   .blog-post-one-img {
     background-position: 0;
   }
+
+     /* BLOG */
+
+     .blog-post-two-img {
+      background-position: -100px;
+    }
+
+       /* BLOG */
+
+   .blog-post-two-img {
+    background-position: 0;
+  }
+
 }
 
 @media screen and (max-width: 1025px) {
@@ -651,16 +776,24 @@ textarea {
 
   /* BLOG PAGE */
 
-  #blog .blog-post .post-content {
+  .blog-post .post-content {
     margin: 3rem 0;
     column-count: 1;
     column-gap: 5rem;
   }
 
-  #blog .blog-post .date {
+  .blog-post .date {
     column-span: all;
     margin: 2rem 0 0;
     text-align: right;
+  }
+
+  /* CLASSES + WORKSHOPS */
+
+  .community-education-description .post-content {
+    margin: 3rem 0;
+    column-count: 1;
+    column-gap: 5rem;
   }
 
   /* CONTACT PAGE */
@@ -683,6 +816,15 @@ textarea {
   .location {
     display: block;
   }
+
+  .books-img {
+    background-position: 0;
+  }
+
+  .aspens-img {
+    background-position: 0;
+  }
+
 
 }
 
@@ -712,61 +854,6 @@ textarea {
 }
 
 @media screen and (max-width: 865px) {
-
-  /* NAVIGATION */
-
-  .nav-bar .links .sublink {
-    display: none;
-  }
-
-  .nav-bar .links {
-    justify-content: space-between;
-    padding: var(--links-padding-4) 0;
-  }
-
-  .nav-bar .links .bars-icon {
-    display: block;
-    margin-left: 5rem;
-    line-height: 3rem;
-    cursor: pointer;
-  }
-
-  .nav-bar .links .liminal-icon {
-    font-size: var(--icon-size-4);
-    margin-right: 5rem;
-    margin-left: 0;
-    line-height: 3rem;
-    width: auto;
-  }
-
-  .webpage-container {
-    margin: 7rem auto calc(var(--nav-bar-height-4) + var(--flower-padding-top));
-  }
-
-  .vertical-links {
-    background-color: var(--color-nav);
-    margin: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-  }
-
-  .vertical-links li {
-    list-style-type: none;
-  }
-
-  .vertical-links a {
-    text-decoration: none;
-    color: rgb(94, 94, 94);
-    transition: color 0.8s;
-    font-size: 3.5rem;
-  }
-
-  .vertical-links a:hover {
-    color: rgb(0, 0, 0);
-    border-bottom: 1px solid black;
-  }
 
   /* CAFE + MENU */
 
@@ -804,10 +891,6 @@ textarea {
 
 @media screen and (max-width: 700px) {
   /* BANNER IMG */
-
-  .banner-img {
-    background-position: -230px;
-  }
 
   .tagline {
     font-size: 4.5rem;
@@ -849,22 +932,22 @@ textarea {
     transform-origin: 0 0;
   }
 
+     /* BLOG */
+
+     .blog-post-two-img {
+      background-position: -100px;
+    }
+
 }
 
 @media screen and (max-width: 700px) and (max-height: 625px) {
   /* BANNER IMG */
 
-  .banner-img {
-    background-position: 0px;
-  }
 
 }
 
 @media screen and (max-width: 400px) {
 
-  .banner-img {
-    background-position: -300px;
-  }
 
   /* CAFE + MENU */
 
@@ -877,8 +960,5 @@ textarea {
 @media screen and (max-width: 400px) and (max-height: 475px) {
   /* BANNER IMG */
 
-  .banner-img {
-    background-position: 0px;
-  }
 
 }

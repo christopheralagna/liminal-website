@@ -1,0 +1,19 @@
+
+.block h2 {
+  margin-top: 0;
+  
+}
+
+.block {
+  padding: 3rem 0;
+  border-top: 1px solid grey;
+}
+
+.block p {
+  margin-bottom: 0;
+}
+
+.block .purpose {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
