@@ -146,7 +146,7 @@ ul {
 }
 
 .nav-bar .links .first-sublink {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 
 .nav-bar .links .sublink a {
@@ -214,11 +214,11 @@ ul {
 
 /* VOLUNTEER PAGE */
 
-.material-donations-list {
+.donations-list {
   list-style-type: disc;
 }
 
-.material-donations-list li {
+.donations-list li {
   margin-bottom: 1.5rem;
 }
 
@@ -226,8 +226,19 @@ ul {
   margin: 1.5rem 0;
 }
 
-#donate h3 {
-  margin: 4.5rem 0 1.5rem;
+.monetary-donations {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+}
+
+.material-donations {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+  margin: 3rem 0;
+}
+
+.volunteering {
+  margin-bottom: 3rem;
 }
 
 /* ABOUT PAGE */
@@ -414,7 +425,6 @@ ul {
 /* CLASSES + WORKSHOPS */
 
 .community-education-description .post-content {
-  margin: 3rem 0;
   column-count: 2;
   column-gap: 5rem;
 }
@@ -430,6 +440,8 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid grey;
 }
 
 #contact form {
@@ -440,7 +452,7 @@ ul {
 
 #contact h2 {
   font-weight: 700;
-  margin: 0;
+  
 }
 
 label {
@@ -450,7 +462,7 @@ label {
 }
 
 button {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   background-color: var(--black-primary);
   color: white;
   border: none;
@@ -528,11 +540,11 @@ textarea {
 .location {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0 6rem;
+  margin: 3rem 0;
 }
 
-.location-info p {
-  font-size: 1.8rem;
+.location h2 {
+  margin: 0;
 }
 
 
@@ -549,6 +561,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   height: auto;
+  margin-bottom: 0rem !important;
 }
 
 /* BLOG PAGE */
@@ -560,7 +573,7 @@ textarea {
 }
 
 .blog-post p {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .blog-post .post-author {
@@ -763,39 +776,43 @@ textarea {
 
   h2 {
     font-size: 2.5rem;
-    margin: 1.5rem 0 !important;
+    margin: 0 0 1.5rem;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .about-page-grid .h3-smaller {
+    font-size: 1.2rem;
   }
 
   li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .blog-post .sub-header {
+    margin: 1.5rem 0;
   }
 
   #donate h3 {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .block {
-    padding-top: 0 !important;
+    padding-top: 0;
   }
 
   .block h2 {
-    margin-top: 3rem !important;
+    margin: 3rem 0;
   }
 
   .flower2-img {
     margin-bottom: 3rem;
-  }
-
-  .post-content {
-    margin: 1.5rem 0 !important;
   }
 
   .nav-bar .links {
@@ -828,8 +845,16 @@ textarea {
     border-bottom: 1px solid grey;
   }
 
+  #cafe-menu .beverages h2 {
+    margin-top: 0;
+  }
+
   #cafe-menu .small-plates .list {
     padding: 0;
+  }
+
+  #cafe-menu .small-plates h2 {
+    margin-bottom: 3rem;
   }
 
   #cafe-menu .a-note-on-payment {
@@ -848,6 +873,7 @@ textarea {
 
   #events .event {
     display: block;
+    margin: 3rem 0;
   }
 
   #events .event-description {
@@ -857,14 +883,19 @@ textarea {
   .succulents-img {
     width: 100%;
     height: 20rem;
+    margin: 3rem 0 1.5rem;
   }
 
   /* BLOG PAGE */
 
   .blog-post .post-content {
-    margin: 3rem 0;
     column-count: 1;
     column-gap: 5rem;
+    margin: 1.5rem 0;
+  }
+
+  .blog-post h2 {
+    margin: 1.5rem 0;
   }
 
   .blog-post .date {
@@ -875,24 +906,18 @@ textarea {
   /* CLASSES + WORKSHOPS */
 
   .community-education-description .post-content {
-    margin: 2rem 0;
     column-count: 1;
     column-gap: 5rem;
   }
 
   .community-education-description h2 {
-    margin-top: 3rem !important;
+    margin-top: 3rem;
   }
 
   /* CONTACT PAGE */
 
   #contact .get-in-touch {
     display: block;
-    margin-bottom: 6rem;
-  }
-
-  #contact .form-submit {
-    margin-bottom: 3rem;
   }
 
   /* LOCATION */
@@ -914,14 +939,6 @@ textarea {
 
 @media screen and (max-width: 875px) {
 
-  p {
-    font-size: 1.5rem;
-  }
-
-  .block li {
-    font-size: 1.5rem;
-  }
-
   /* ABOUT PAGE */
 
   .webpage-container .about-page-grid {
@@ -933,7 +950,7 @@ textarea {
   }
 
   .about-page-grid p {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     width: 100%;
   }
 
@@ -946,6 +963,24 @@ textarea {
     background-size: cover;
     height: 20rem;
     margin-bottom: 3rem;
+  }
+
+  #contact fieldset {
+    display: block;
+  }
+
+  #contact fieldset div {
+    width: 100%;
+  }
+
+  input[id="last-name"],
+  label[for="last-name"] {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  input[id="first-name"] {
+    width: 100%;
   }
 
 }
@@ -990,32 +1025,8 @@ textarea {
 }
 
 @media screen and (max-width: 700px) {
-  /* BANNER IMG */
-
-  .tagline {
-    font-size: 4.5rem;
-    line-height: 6.5rem;
-  }
 
   /* CONTACT PAGE */
-
-  #contact fieldset {
-    display: block;
-  }
-
-  #contact fieldset div {
-    width: 100%;
-  }
-
-  input[id="last-name"],
-  label[for="last-name"] {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  input[id="first-name"] {
-    width: 100%;
-  }
 
   #map {
     height: 200px;
@@ -1063,7 +1074,7 @@ textarea {
   .p-larger {
     font-size: 1.2rem;
     font-weight: 400;
-    margin: 1rem 0 !important;
+    margin: 1.5rem 0;
     line-height: 2rem;
   }
 
@@ -1079,8 +1090,8 @@ textarea {
 
   h2 {
     font-size: 2rem;
-    margin: 1.2rem 0 !important;
-    line-height: 2.5rem !important;
+    margin: 3rem 0;
+    line-height: 2.5rem;
   }
 
   h3 {
@@ -1093,11 +1104,7 @@ textarea {
     line-height: 1.8rem;
   }
 
-  .block li {
-    font-size: 1.2rem;
-  }
-
-  .material-donations-list li {
+  .donations-list li {
     margin: 1rem 0;
   }
 
@@ -1111,12 +1118,16 @@ textarea {
   }
 
   #donate h3 {
-    margin: 3rem 0 1rem;
+    margin: 3rem 0;
   }
 
   /* CAFE */
 
   #cafe-menu h2 {
+    margin-bottom: 3rem;
+  }
+
+  #cafe-menu .small-plates h2 {
     margin-bottom: 3rem;
   }
 
@@ -1127,14 +1138,20 @@ textarea {
 
   /* VOLUNTEER */
 
-  .material-donations-list {
+  .donations-list {
     list-style-type: none;
+  }
+
+  /* EVENT */
+
+  .event h2 {
+    margin-bottom: 1.5rem;
   }
 
   /* BLOG */
 
   .blog-post {
-    margin: 1.5rem 0 !important;
+    margin: 3rem 0;
   }
 
   .blog-post .sub-header {
@@ -1142,25 +1159,23 @@ textarea {
   }
 
   .blog-post-one-img {
-    margin: 1.5rem 0;
+    margin: 3rem 0 1.5rem;
   }
 
   .blog-post-two-img {
-    margin: 1.5rem 0;
+    margin: 3rem 0 1.5rem;
   }
 
   .post-author {
-    margin-bottom: 1.5rem 0 !important;
+    margin-bottom: 1.5rem 0;
   }
 
   .blog-post p {
-    font-size: 1.2rem;
     line-height: 1.8rem;
-    margin: 1.5rem 0;
   }
 
   .post-content {
-    margin: 1.5rem 0 !important;
+    margin: 1.5rem 0;
   }
 
   .aspens-img {
@@ -1182,15 +1197,11 @@ textarea {
   /* CLASSES */
 
   .community-education-description {
-    margin: 1.5rem 0;
+    margin: 3rem 0;
   }
 
   .community-education-description h2 {
-    margin: 1.5rem 0 .5rem !important;
-  }
-
-  .community-education-description .post-content {
-    margin-top: 0 !important;
+    margin: 3rem 0;
   }
 
 }
