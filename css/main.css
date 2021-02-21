@@ -219,6 +219,14 @@ ul {
   margin-bottom: 1.5rem;
 }
 
+#donate .p-larger {
+  margin: 1.5rem 0;
+}
+
+#donate h3 {
+  margin: 4.5rem 0 1.5rem;
+}
+
 /* ABOUT PAGE */
 
 .webpage-container .about-page-grid {
@@ -560,7 +568,6 @@ textarea {
 .blog-post h2 {
   font-weight: 700;
   margin: 3rem auto;
-  line-height: 3.5rem;
 }
 
 .blog-post h3 {
@@ -578,6 +585,12 @@ textarea {
   column-span: all;
   margin: 2rem 0 0;
   text-align: right;
+}
+
+.blog-post .sub-header {
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /* EVENTS PAGE */
@@ -730,6 +743,58 @@ textarea {
 
 @media screen and (max-width: 1025px) {
 
+  .p-larger {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+  }
+
+  .blog-post .date {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 !important;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  #donate h3 {
+    margin-top: 4rem;
+  }
+
+  .block {
+    padding-top: 0 !important;
+  }
+
+  .block h2 {
+    margin-top: 3rem !important;
+  }
+
+  .flower2-img {
+    margin-bottom: 3rem;
+  }
+
+  .post-content {
+    margin: 1.5rem 0 !important;
+  }
+
   .nav-bar .links {
     padding: var(--links-padding-3) 0;
   }
@@ -801,16 +866,19 @@ textarea {
 
   .blog-post .date {
     column-span: all;
-    margin: 2rem 0 0;
     text-align: right;
   }
 
   /* CLASSES + WORKSHOPS */
 
   .community-education-description .post-content {
-    margin: 3rem 0;
+    margin: 2rem 0;
     column-count: 1;
     column-gap: 5rem;
+  }
+
+  .community-education-description h2 {
+    margin-top: 3rem !important;
   }
 
   /* CONTACT PAGE */
@@ -818,10 +886,6 @@ textarea {
   #contact .get-in-touch {
     display: block;
     margin-bottom: 6rem;
-  }
-
-  #contact fieldset {
-    margin-top: 3rem;
   }
 
   #contact .form-submit {
@@ -846,6 +910,15 @@ textarea {
 }
 
 @media screen and (max-width: 875px) {
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .block li {
+    font-size: 1.5rem;
+  }
+
   /* ABOUT PAGE */
 
   .webpage-container .about-page-grid {
@@ -894,7 +967,10 @@ textarea {
   /* BLOG PAGE */
 
   .blog-post-one-img {
-    background-position: -50px;
+    height: 30rem;
+  }
+
+  .blog-post-two-img {
     height: 30rem;
   }
 
@@ -939,9 +1015,126 @@ textarea {
     width: 100%;
   }
 
+  .location {
+    margin: 3rem 0 3rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    font-size: 1.5rem;
+  }
+
+  button {
+    height: 4.5rem;
+  }
+
 }
 
 @media screen and (max-width: 475px){
+
+  .vertical-links a {
+    font-size: 2.2rem;
+  }
+
+  .vertical-links .current-link {
+    font-size: 2.2rem;
+  }
+
+  .p-larger {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0 !important;
+    line-height: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 1.2rem 0 !important;
+    line-height: 2.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+  }
+
+  .block li {
+    font-size: 1.2rem;
+  }
+
+  .material-donations-list li {
+    margin: 1rem 0;
+  }
+
+  .block li {
+    padding-left: 0;
+    list-style-type: disc;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  #donate h3 {
+    margin: 3rem 0 1rem;
+  }
+
+  .blog-post {
+    margin: 1.5rem 0 !important;
+  }
+
+  .blog-post .sub-header {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-one-img {
+    margin: 1.5rem 0;
+  }
+
+  .blog-post-two-img {
+    margin: 1.5rem 0;
+  }
+
+  .post-author {
+    margin-bottom: 1.5rem 0 !important;
+  }
+
+  .blog-post p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .post-content {
+    margin: 1.5rem 0 !important;
+  }
+
+  .aspens-img {
+    margin-bottom: 1.5rem;
+  }
 
   #rc-imageselect, 
   .g-recaptcha {
@@ -949,11 +1142,25 @@ textarea {
     transform-origin: 0 0;
   }
 
-     /* BLOG */
+  /* BLOG */
 
-     .blog-post-two-img {
-      background-position: -100px;
-    }
+  .blog-post-two-img {
+    background-position: -100px;
+  }
+
+  /* CLASSES */
+
+  .community-education-description {
+    margin: 1.5rem 0;
+  }
+
+  .community-education-description h2 {
+    margin: 1.5rem 0 .5rem !important;
+  }
+
+  .community-education-description .post-content {
+    margin-top: 0 !important;
+  }
 
 }
 
