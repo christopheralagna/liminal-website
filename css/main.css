@@ -158,8 +158,11 @@ ul {
   font-size: var(--sublink-size);
 }
 
-.nav-bar .links .sublink {
-  margin: 0 2rem;
+.sublinks {
+  display: flex;
+  padding: 0;
+  width: 65vw;
+  justify-content: space-between;
 }
 
 .nav-bar .links .current-link {
@@ -622,7 +625,7 @@ textarea {
 
   /* NAVIGATION */
 
-  .nav-bar .links .sublink {
+  .nav-bar .links .sublinks {
     display: none;
   }
 
