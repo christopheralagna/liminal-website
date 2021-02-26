@@ -424,6 +424,45 @@ ul {
 
 /* CLASSES + WORKSHOPS */
 
+.teaching-questions {
+  margin: 3rem auto;
+  border-top: 1px solid grey;
+}
+
+.q-and-a {
+
+}
+
+.question {
+  user-select: none;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+}
+
+.answer li {
+  margin: 3rem 0;
+}
+
+.triangle {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid var(--black-secondary);
+  border-bottom: 5px solid transparent;
+  transform: rotate(0deg);
+  transition: transform 75ms;
+  float: right;
+  margin-top: 1rem;
+}
+
 .community-education-description .post-content {
   column-count: 2;
   column-gap: 5rem;
@@ -432,6 +471,10 @@ ul {
 .community-education-description {
   margin: 3rem auto;
   border-top: 1px solid grey;
+}
+
+.community-education-description h2 {
+  text-align: center;
 }
 
 /* CONTACT PAGE */
@@ -912,6 +955,15 @@ textarea {
 
   .community-education-description h2 {
     margin-top: 3rem;
+    text-align: left;
+  }
+
+  .teaching-questions h2 {
+    margin-top: 3rem;
+  }
+
+  .answer li {
+    margin: 1.5rem 0;
   }
 
   /* CONTACT PAGE */
@@ -1052,6 +1104,26 @@ textarea {
 
   button {
     height: 4.5rem;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .teaching-questions .question {
+    font-size: 1.2rem;
+    line-height: 1.5rem;;
+    margin: 3rem 0;
+  }
+
+  .teaching-questions .answer {
+    font-size: 1.2rem;
+  }
+
+  .triangle {
+    border-top: 4px solid transparent;
+    border-left: 8px solid var(--black-secondary);
+    border-bottom: 4px solid transparent;
   }
 
 }
@@ -1202,6 +1274,24 @@ textarea {
 
   .community-education-description h2 {
     margin: 3rem 0;
+  }
+
+  .teaching-questions .question {
+    font-size: 1rem;
+  }
+
+  .triangle {
+    border-top: 3px solid transparent;
+    border-left: 6px solid var(--black-secondary);
+    border-bottom: 3px solid transparent;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .triangle {
+    display: none;
   }
 
 }
