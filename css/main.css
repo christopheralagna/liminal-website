@@ -435,6 +435,7 @@ ul {
 
 .question {
   user-select: none;
+  margin: 3rem 0;
 }
 
 .question:hover {
