@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cleanup": "rm -rf .cache dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run cleanup && parcel *.html",
+    "build": "parcel build *.html"
   },
   "repository": {
     "type": "git",
