@@ -1,7 +1,7 @@
 {
   "name": "liminal-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Liminal Website",
   "main": "index.js",
   "scripts": {
     "cleanup": "rm -rf .cache dist",
