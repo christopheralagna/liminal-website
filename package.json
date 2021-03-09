@@ -4,9 +4,8 @@
   "description": "Liminal Website",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rm -rf .cache dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm run cleanup && parcel *.html",
+    "dev": "parcel *.html",
     "build": "parcel build *.html"
   },
   "repository": {
