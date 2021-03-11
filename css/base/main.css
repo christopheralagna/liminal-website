@@ -1,0 +1,90 @@
+
+:root {
+  --black-primary: rgb(56, 56, 56);
+  --black-secondary: rgb(27,27,27);
+  --black-tertiary: rgb(87, 87, 87);
+  --webpage-color: rgb(250, 255, 249);
+  --color-nav: #d4eac2;
+
+  --flower-padding-top: 6rem;
+  /* CALCULATE NAVBAR SIZING AND MARGINS */
+  --sublink-size: 1.6rem;
+  --links-padding: 1rem;
+  --icon-size: 2.8rem;
+  --nav-bar-height: calc((var(--links-padding) * 2) + var(--icon-size));
+
+  /* CALCULATE NAVBAR SIZING AND MARGINS */
+  --sublink-size-2: 1.6rem;
+  --links-padding-2: 1rem;
+  --icon-size-2: 2.8rem;
+  --nav-bar-height-2: calc((var(--links-padding-2) * 2) + var(--icon-size-2));
+
+  /* CALCULATE NAVBAR SIZING AND MARGINS */
+  --sublink-size-3: 1.6rem;
+  --links-padding-3: 1rem;
+  --icon-size-3: 2.8rem;
+  --nav-bar-height-3: calc((var(--links-padding-3) * 2) + var(--icon-size-3));
+
+  /* CALCULATE NAVBAR SIZING AND MARGINS */
+  --links-padding-4: 1.6rem;
+  --icon-size-4: 2.8rem;
+  --nav-bar-height-4: calc((var(--links-padding-4) * 2) + var(--icon-size-4));
+
+}
+
+/* GENERAL PAGE CONTAINER */
+
+.webpage-container {
+  width: 65vw;
+  margin: 6rem auto calc(var(--nav-bar-height) + var(--flower-padding-top));
+}
+
+.flower-container {
+  padding-top: var(--flower-padding-top);
+  border-top: 1px solid grey;
+}
+
+.flower-img {
+  background: url(../webpages/images/flowers.jpg) no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 20rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+
+  .webpage-container {
+    margin: 6rem auto calc(var(--nav-bar-height-4) + var(--flower-padding-top));
+  }
+
+  .webpage-container {
+    margin: 6rem auto calc(var(--nav-bar-height-2) + var(--flower-padding-top));
+  }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .webpage-container {
+    margin: 3rem auto calc(var(--nav-bar-height-3) + var(--flower-padding-top));
+  }
+
+}
+
+@media screen and (max-width: 875px) {
+
+  .webpage-container {
+    width: 85vw;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+
+  .webpage-container {
+    width: 92vw;
+    margin-top: 2rem;
+  }
+
+}

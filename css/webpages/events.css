@@ -1,0 +1,56 @@
+
+/* EVENTS PAGE */
+
+.event {
+  margin: 3rem auto 0;
+  border-top: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-description {
+  flex-basis: 60%;
+  margin-left: 5rem;
+}
+
+.succulents-img {
+  background: url(images/succulents-smaller.jpg) no-repeat;
+  background-size: cover;
+  height: 30rem;
+  width: 30rem;
+  align-self: center;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 1025px) {
+
+  /* EVENTS PAGE */
+
+  #events h2 {
+    line-height: 3.5rem;
+  }
+
+  .event {
+    display: block;
+    margin: 3rem 0;
+  }
+
+  .event-description {
+    margin: 0;
+  }
+
+  .succulents-img {
+    width: 100%;
+    height: 20rem;
+    margin: 3rem 0 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+
+  .event h2 {
+    margin-bottom: 1.5rem;
+  }
+
+}

@@ -1,0 +1,70 @@
+
+/* DONATE/VOLUNTEER */
+
+.donations-list {
+  list-style-type: disc;
+}
+
+.donations-list li {
+  margin-bottom: 1.5rem;
+}
+
+#donate .p-larger {
+  margin: 1.5rem 0;
+}
+
+.monetary-donations {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+}
+
+.material-donations {
+  border-bottom: 1px solid grey;
+  padding-bottom: 1.5rem;
+  margin: 3rem 0;
+}
+
+.volunteering {
+  margin-bottom: 3rem;
+}
+
+.aspens-img {
+  background: url(images/aspens.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+  width: auto;
+  margin-bottom: 3rem;
+  height: 20rem;
+}
+
+@media screen and (max-width: 1025px) {
+
+  #donate h3 {
+    margin-top: 3rem;
+  }
+
+  .aspens-img {
+    background-position: 0;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+
+  .donations-list li {
+    margin: 1rem 0;
+  }
+
+  #donate h3 {
+    margin: 3rem 0;
+  }
+
+  .donations-list {
+    list-style-type: none;
+  }
+
+  .aspens-img {
+    margin-bottom: 1.5rem;
+  }
+
+}

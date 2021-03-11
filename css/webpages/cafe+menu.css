@@ -1,0 +1,163 @@
+
+/* CAFE + MENU */
+
+.oranges-img {
+  background: url(images/oranges-smaller.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+  width: auto;
+  margin-bottom: 3rem;
+  height: 20rem;
+}
+
+#cafe-menu p {
+  margin: 0 auto 3rem;
+}
+
+#cafe-menu h2 {
+  margin: 0;
+}
+
+#cafe-menu ul {
+  margin: 0;
+}
+
+.beverages {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3rem;
+}
+
+.beverages .list {
+  text-align: right;
+}
+
+.small-plates {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  margin-top: 3rem;
+  padding-bottom: 0;
+}
+
+.small-plate {
+  margin-bottom: 0;
+}
+
+.small-plates .list {
+  flex-basis: 70%;
+}
+
+.a-note-on-payment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.a-note-on-payment div {
+  flex-basis: 60%;
+}
+
+@media screen and (max-width: 1250px) {
+
+  .a-note-on-payment div {
+    flex-basis: 50%;
+  }
+
+  #cafe-menu h2 {
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  
+  .small-plates {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-top: 3rem;
+    padding-bottom: 0;
+  }
+
+  .small-plates .list {
+    flex-basis: 65%;
+  }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .small-plates {
+    display: block;
+    border-bottom: 1px solid grey;
+  }
+
+  .beverages h2 {
+    margin-top: 0;
+  }
+
+  .small-plates .list {
+    padding: 0;
+  }
+
+  .small-plates h2 {
+    margin-bottom: 3rem;
+  }
+
+  .a-note-on-payment {
+    display: block;
+  }
+
+  .a-note-on-payment div {
+    margin-top: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 865px) {
+
+  .beverages {
+    display: block;
+  }
+
+  .beverages .list {
+    text-align: left;
+    list-style-type: circle;
+  }
+
+  .small-plates {
+    display: block;
+  }
+
+  .oranges-img {
+    background-position: 0;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+
+  #cafe-menu h2 {
+    margin-bottom: 3rem;
+  }
+
+  .small-plates h2 {
+    margin-bottom: 3rem;
+  }
+
+  .beverages .list {
+    text-align: left;
+    list-style-type: none;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  #cafe-menu .beverages .list {
+    padding: 0;
+  }
+
+}

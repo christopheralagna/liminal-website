@@ -1,0 +1,134 @@
+
+/* ABOUT PAGE */
+
+.webpage-container .about-page-grid {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  grid-template-rows: auto;
+  /*grid-template-rows: 5rem repeat(5, 17rem) 5rem;*/
+  grid-template-areas:
+    "the-name      fern-img"
+    "what-we-offer fern-img"
+    "the-mission   fern-img"
+    "theory-praxis fern-img"
+    ".             fern-img";
+  column-gap: 10rem;
+  row-gap: 1.5rem;
+}
+
+.about-page-grid h1 {
+  margin: 0;
+}
+
+.about-page-grid p {
+  width: auto;
+  margin: 0;
+}
+
+.about-page-grid .h3-smaller {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.about-page-grid .header {
+  grid-area: header;
+}
+
+.about-page-grid .the-name {
+  grid-area: the-name;
+}
+
+.about-page-grid .what-we-are {
+  grid-area: what-we-are;
+}
+
+.about-page-grid .what-we-offer {
+  grid-area: what-we-offer;
+}
+
+.about-page-grid .the-mission {
+  grid-area: the-mission;
+}
+
+.about-page-grid .theory-praxis {
+  grid-area: theory-praxis;
+}
+
+.about-page-grid .fern-img {
+  grid-area: fern-img;
+  background: url(images/ferns-smaller.jpg) no-repeat;
+  background-size: cover;
+  background-position: -150px;
+}
+
+.block h2 {
+  margin-top: 0;
+  
+}
+
+.block {
+  padding: 3rem 0;
+  border-top: 1px solid grey;
+}
+
+.block p {
+  margin-bottom: 0;
+}
+
+.block ul {
+  list-style-type: disc;
+}
+
+.block li {
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1025px) {
+
+  .about-page-grid .h3-smaller {
+    font-size: 1.2rem;
+  }
+
+  .block {
+    padding-top: 0;
+  }
+
+  .block h2 {
+    margin: 3rem 0;
+  }
+
+}
+
+@media screen and (max-width: 875px) {
+
+  .webpage-container .about-page-grid {
+    display: block;
+  }
+
+  .about-page-grid p {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .about-page-grid h1 {
+    margin-bottom: 3rem;
+  }
+
+  .fern-rotated-img {
+    background: url(images/ferns-smaller.jpg) no-repeat;
+    background-size: cover;
+    height: 20rem;
+    margin-bottom: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+
+  .block li {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+}

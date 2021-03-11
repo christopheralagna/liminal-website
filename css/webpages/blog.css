@@ -1,0 +1,142 @@
+
+/* BLOG */
+
+.blog-post-one-img {
+  background: url(images/blog-post-one.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 40rem;
+  margin: 3rem 0;
+}
+
+.blog-post-two-img {
+  background: url(images/blog-post-two.png) no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 40rem;
+  margin: 3rem 0;
+}
+
+.blog-post {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 3rem auto;
+  border-top: 1px solid grey;
+}
+
+.blog-post p {
+  margin: 1.5rem 0;
+}
+
+.blog-post .post-author {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.blog-post h2 {
+  font-weight: 700;
+  margin: 3rem auto;
+}
+
+.blog-post h3 {
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+}
+
+.blog-post .post-content {
+  margin: 3rem 0;
+  column-count: 2;
+  column-gap: 5rem;
+}
+
+.blog-post .date {
+  column-span: all;
+  margin: 2rem 0 0;
+  text-align: right;
+}
+
+.blog-post .sub-header {
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1150px) {
+
+  .blog-post-one-img {
+    background-position: 0;
+  }
+
+   .blog-post-two-img {
+    background-position: 0;
+  }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .blog-post .date {
+    margin-top: 0;
+    column-span: all;
+    text-align: right;
+  }
+
+  .blog-post .sub-header {
+    margin: 1.5rem 0;
+  }
+
+   .blog-post .post-content {
+    column-count: 1;
+    column-gap: 5rem;
+    margin: 1.5rem 0;
+  }
+
+  .blog-post h2 {
+    margin: 1.5rem 0;
+  }
+
+}
+
+@media screen and (max-width: 865px) {
+
+  .blog-post-one-img {
+    height: 30rem;
+  }
+
+  .blog-post-two-img {
+    height: 30rem;
+  }
+
+}
+
+@media screen and (max-width: 475px){
+
+  .blog-post {
+    margin: 3rem 0;
+  }
+
+  .blog-post .sub-header {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-one-img {
+    margin: 3rem 0 1.5rem;
+  }
+
+  .blog-post-two-img {
+    margin: 3rem 0 1.5rem;
+    background-position: -100px;
+  }
+
+  .post-author {
+    margin-bottom: 1.5rem 0;
+  }
+
+  .blog-post p {
+    line-height: 1.8rem;
+  }
+
+  .post-content {
+    margin: 1.5rem 0;
+  }
+
+}

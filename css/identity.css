@@ -1,0 +1,25 @@
+
+.netlify-identity-item {
+  margin: 1rem 0 1rem 3rem;
+}
+
+.netlify-identity-signup {
+
+}
+
+.netlify-identity-item a {
+  text-decoration: none;
+  color:rgb(27,27,27);
+  transition: color 0.8s;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.netlify-identity-item a:hover {
+  color: rgb(87, 87, 87);
+} 
+
+.netlify-identity-menu {
+  padding: 1.5rem 0;
+  margin: 0;
+}
