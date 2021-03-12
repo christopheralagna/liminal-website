@@ -17,15 +17,19 @@
   margin: 0;
 }
 
-.nav-bar .links .liminal-icon {
-  color: var(--black-primary);
+.liminal-link {
   text-decoration: none;
+  color: var(--black-primary);
+  transition: color 0.8s;
+}
+
+.nav-bar .links .liminal-icon {
   font-weight: 700;
   font-size: var(--icon-size);
   letter-spacing: 3px;
   width: 17.5vw;
   text-align: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .nav-bar .links .first-anchor {
@@ -65,6 +69,10 @@
 .nav-bar .links .sublink a:hover {
   color: var(--black-secondary);
   border-bottom: 1px solid black;
+}
+
+.liminal-link:hover {
+  color: var(--black-secondary);
 }
 
 .nav-bar .links .bars-icon {

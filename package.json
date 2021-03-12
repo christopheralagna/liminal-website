@@ -2,9 +2,10 @@
   "name": "liminal-website",
   "version": "1.0.0",
   "description": "Liminal Website",
-  "main": "index.js",
+  "main": "scripts/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "concat-css": "cat css/* > output/all.css",
     "dev": "parcel *.html",
     "build": "parcel build *.html"
   },
