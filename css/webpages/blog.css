@@ -17,6 +17,14 @@
   margin: 3rem 0;
 }
 
+.blog-post-three-img {
+  background: url(images/blog-post-three-img.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 40rem;
+  margin: 3rem 0;
+}
+
 .blog-post {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 3rem auto;
@@ -67,6 +75,10 @@
   }
 
    .blog-post-two-img {
+    background-position: 0;
+  }
+
+  .blog-post-three-img {
     background-position: 0;
   }
 
