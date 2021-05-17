@@ -2,10 +2,9 @@
 /* EVENTS PAGE */
 
 .event {
-  margin: 3rem auto 0;
+  margin: 0;
   border-top: 1px solid grey;
-  display: flex;
-  flex-direction: row;
+  /* display established in events script */
 }
 
 .event-description {
@@ -22,6 +21,26 @@
   margin: 3rem auto;
 }
 
+.event-time-selection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.current, 
+.past {
+  font-size: 2rem;
+  border: none;
+  color: var(--black-tertiary);
+  background: none;
+  margin: auto 0 0;
+}
+
+.custom-hover {
+  cursor: pointer;
+
+}
+
 @media screen and (max-width: 1025px) {
 
   /* EVENTS PAGE */
@@ -32,7 +51,7 @@
 
   .event {
     display: block;
-    margin: 3rem 0;
+    margin: 0;
   }
 
   .event-description {

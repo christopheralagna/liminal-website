@@ -20,7 +20,7 @@
 .liminal-link {
   text-decoration: none;
   color: var(--black-primary);
-  transition: color 0.8s;
+  transition: color 0.5s;
 }
 
 .nav-bar .links .liminal-icon {
@@ -45,8 +45,9 @@
   /* bottom padding is for underline (border-bottom) on hover */
   padding-bottom: 0.2rem;
   text-decoration: none;
-  transition: color 0.8s;
+  transition: all 0.2s;
   font-size: var(--sublink-size);
+  border-bottom: 1px solid rgba(0,0,0,0);
 }
 
 .sublinks {
@@ -68,7 +69,7 @@
 
 .nav-bar .links .sublink a:hover {
   color: var(--black-secondary);
-  border-bottom: 1px solid black;
+  border-color: rgba(27,27,27,1);
 }
 
 .liminal-link:hover {
@@ -126,13 +127,14 @@
 
   .vertical-links a {
     text-decoration: none;
-    color: rgb(94, 94, 94);
-    transition: color 0.8s;
+    color: var(--black-tertiary);
+    transition: all 0.2s;
+    border-bottom: 1px solid rgba(0,0,0,0);
   }
 
   .vertical-links a:hover {
-    color: rgb(0, 0, 0);
-    border-bottom: 1px solid black;
+    color: var(--black-secondary);
+    border-bottom: 1px solid rgba(27,27,27,1);
   }
 
   .nav-bar .links {
