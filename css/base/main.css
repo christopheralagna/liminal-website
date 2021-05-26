@@ -52,6 +52,15 @@
   margin: 0 auto;
 }
 
+.liminal1-img {
+  background: url(../webpages/images/liminal3.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -325px;
+  width: auto;
+  height: 25rem;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1250px) {
 
   .webpage-container {
