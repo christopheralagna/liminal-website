@@ -21,6 +21,15 @@
   margin: 3rem auto;
 }
 
+.opening_night_flyer-img {
+  background: url(images/opening_night_flyer.jpg) no-repeat;
+  background-size: cover;
+  height: 30rem;
+  width: 30rem;
+  align-self: center;
+  margin: 3rem auto;
+}
+
 .event-time-selection {
   display: flex;
   justify-content: space-around;
