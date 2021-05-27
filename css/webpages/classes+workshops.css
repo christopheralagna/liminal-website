@@ -29,7 +29,8 @@
 }
 
 .answer li {
-  margin: 3rem 0;
+  margin: 1.5rem 0;
+  list-style-type: disc;
 }
 
 .triangle {
@@ -130,6 +131,10 @@
 
   .post-content {
     margin: 1.5rem 0;
+  }
+
+  .answer li {
+    list-style-type: none;
   }
 
 }
