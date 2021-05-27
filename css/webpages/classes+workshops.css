@@ -17,7 +17,7 @@
 
 .question {
   user-select: none;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
 }
 
 .question:hover {
@@ -60,9 +60,6 @@
   text-align: center;
 }
 
-
-
-
 @media screen and (max-width: 1025px) {
 
   .community-education-description .post-content {
@@ -83,6 +80,10 @@
     margin: 1.5rem 0;
   }
 
+  .question {
+    margin: 1.5rem 0;
+  }
+
   .books-img {
     background-position: 0;
   }
@@ -91,9 +92,8 @@
 
 @media screen and (max-width: 600px){
 
-  .teaching-questions .question {
+  .question {
     font-size: 1.2rem;
-    line-height: 1.5rem;;
     margin: 3rem 0;
   }
 
@@ -117,10 +117,6 @@
 
   .community-education-description h2 {
     margin: 3rem 0;
-  }
-
-  .teaching-questions .question {
-    font-size: 1rem;
   }
 
   .triangle {

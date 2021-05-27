@@ -45,7 +45,7 @@ body {
   background-color: var(--webpage-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: var(--black-secondary);
 }
 
@@ -66,6 +66,13 @@ h3 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3rem;
+  margin: 0 0 1.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
   margin: 0 0 1.5rem;
 }
 
@@ -102,7 +109,7 @@ h3::selection {
 .p-larger {
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 2.5rem;
   margin: 3rem auto;
 }
 
@@ -124,6 +131,7 @@ ul {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 1.5rem 0;
+    line-height: 2rem;
   }
 
   h1 {
@@ -140,12 +148,18 @@ ul {
     font-size: 1.5rem;
   }
 
+  h4 {
+    font-size: 1.2rem;
+    margin: 0 2rem;
+  }
+
   li {
     font-size: 1.2rem;
   }
 
   p {
     font-size: 1.2rem;
+    line-height: 2rem;
   }
 
 }
@@ -161,7 +175,8 @@ ul {
 
   p {
     font-size: 1.2rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    line-height: 2rem;
   }
 
   h1 {
@@ -171,7 +186,7 @@ ul {
 
   h2 {
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 3rem 0 1.5rem;
     line-height: 2.5rem;
   }
 
