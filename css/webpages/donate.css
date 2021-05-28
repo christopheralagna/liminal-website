@@ -29,12 +29,17 @@
 }
 
 .aspens-img {
-  background: url(images/aspens.jpg) no-repeat;
+  background: url(images/limidonations1.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 -200px;
+  background-position: 0 -250px;
   width: auto;
   margin-bottom: 3rem;
-  height: 20rem;
+  height: 35rem;
+}
+
+.donate-img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1025px) {
