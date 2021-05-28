@@ -14,3 +14,47 @@
   height: 100vh;
   background-color: rgba(53, 53, 53, 20%);
 }
+
+#myVideo {
+  position: fixed;
+  left: -24rem;
+  top: -25rem;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+  #myVideo {
+    left: -45rem;
+    top: -30rem;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  #myVideo {
+    left: -50rem;
+    top: -30rem;
+  }
+
+}
+
+@media screen and (min-height: 825px) {
+
+  #myVideo {
+    left: -50rem;
+    top: -5rem;
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+  #myVideo {
+    left: 0rem;
+    top: 0rem;
+  }
+
+}
