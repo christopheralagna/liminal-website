@@ -45,12 +45,31 @@
   border-top: 1px solid grey;
 }
 
+/*
+
 .flower-img {
   background: url(../webpages/images/flowers.jpg) no-repeat;
   background-size: cover;
   width: auto;
   height: 20rem;
   margin: 0 auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(182, 163, 123);
+}
+
+*/
+
+.flower-img {
+  background: url(../webpages/images/liminal2.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -225px;
+  width: auto;
+  height: 40rem;
+  margin: 0 auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(72, 88, 94);
 }
 
 .liminal1-img {
@@ -60,6 +79,14 @@
   width: auto;
   height: 25rem;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+
+  .flower-img {
+    background-position: 0 0;
+  }
+
 }
 
 /*
@@ -102,3 +129,5 @@
 }
 
 */
+
+
