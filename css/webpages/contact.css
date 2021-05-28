@@ -1,6 +1,31 @@
 
 /* CONTACT PAGE */
 
+/*
+
+.flower2-img {
+  background: url(images/flower2-smaller.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+  width: auto;
+  margin-bottom: 6rem;
+  height: 20rem;
+}
+
+*/
+
+.contact-img {
+  max-width: 50%;
+  height: auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
+}
+
+.contact-img-box {
+  text-align: center;
+}
+
 .flower2-img {
   background: url(images/flower2-smaller.jpg) no-repeat;
   background-size: cover;
