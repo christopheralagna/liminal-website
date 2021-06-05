@@ -32,6 +32,38 @@
   min-height: 100%;
 }
 
+@media screen and (max-width: 1500px) {
+
+  .bar-img {
+    background-position: -300px 0;
+  }
+
+}
+
+@media screen and (max-width: 1190px) {
+
+  .bar-img {
+    background-position: -600px 0;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .bar-img {
+    background-position: -900px 0;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+
+  .bar-img {
+    background-position: -1100px 0;
+  }
+
+}
+
 @media screen and (max-width: 800px) {
 
   #myVideo {
