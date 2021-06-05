@@ -63,13 +63,13 @@
 .flower-img {
   background: url(../webpages/images/liminal2.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 -225px;
+  background-position: 0 -285px;
   width: auto;
-  height: 40rem;
+  height: 22rem;
   margin: 0 auto;
   box-shadow: 5px 5px 20px grey;
   border-radius: 15px;
-  border: 3px solid rgb(72, 88, 94);
+  border: 3px solid rgb(40, 88, 107);
 }
 
 .liminal1-img {
@@ -84,7 +84,15 @@
 @media screen and (max-width: 900px) {
 
   .flower-img {
-    background-position: 0 0;
+    background-position: 0 -150px;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+
+  .flower-img {
+    background-position: 0 0px;
   }
 
 }

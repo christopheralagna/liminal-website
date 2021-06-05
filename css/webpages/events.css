@@ -18,16 +18,30 @@
   height: 30rem;
   width: 30rem;
   align-self: center;
-  margin: 3rem auto;
+  margin: 3rem;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
 }
 
 .opening_night_flyer-img {
   background: url(images/opening_night_flyer.jpg) no-repeat;
-  background-size: cover;
-  height: 30rem;
+  margin: 3rem;
+  max-width: 30rem;
+  height: auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
+}
+
+.film_night_img {
+  background: url(images/film_night.png) no-repeat;
+  margin: 3rem;
   width: 30rem;
-  align-self: center;
-  margin: 3rem auto;
+  height: auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
 }
 
 .event-time-selection {
@@ -68,6 +82,7 @@
 
 .events-jar-img-box {
   text-align: center;
+  margin: 3rem 0;
 }
 
 @media screen and (max-width: 1025px) {
@@ -76,6 +91,18 @@
 
   #events h2 {
     line-height: 3.5rem;
+  }
+
+  .film_night_img { 
+    width: 30rem;
+    max-width: none;
+    margin: 3rem 0;
+  }
+
+  .opening_night_flyer-img {
+    width: 30rem;
+    max-width: none;
+    margin: 3rem 0;
   }
 
   .event {

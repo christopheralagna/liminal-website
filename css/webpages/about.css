@@ -1,19 +1,6 @@
 
 /* ABOUT PAGE */
 
-.about-img {
-  max-width: 70%;
-  height: auto;
-  box-shadow: 5px 5px 20px grey;
-  border-radius: 15px;
-  border: 3px solid rgb(182, 163, 123);
-}
-
-.about-img-box {
-  text-align: center;
-  margin: 3rem auto;
-}
-
 .webpage-container .about-page-grid {
   margin-bottom: 3rem;
   display: grid;
@@ -24,8 +11,7 @@
     "the-name      fern-img"
     "what-we-offer fern-img"
     "the-mission   fern-img"
-    "theory-praxis fern-img"
-    ".             fern-img";
+    "theory-praxis fern-img";
   column-gap: 10rem;
   row-gap: 1.5rem;
 }
@@ -68,11 +54,35 @@
   grid-area: theory-praxis;
 }
 
+/*
+
 .about-page-grid .fern-img {
   grid-area: fern-img;
   background: url(images/ferns-smaller.jpg) no-repeat;
   background-size: cover;
   background-position: -150px;
+}
+
+*/
+
+.about-page-grid .fern-img {
+  width: 100rem;
+  height: auto;
+  position: relative;
+  right: 350px;
+}
+
+.cropped {
+  grid-area: fern-img;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
+  height: 85rem;
+  overflow: hidden;
+}
+
+.fern-rotated-img {
+  display: none;
 }
 
 .block h2 {
@@ -111,12 +121,24 @@
     margin: 3rem 0;
   }
 
+  .cropped {
+    height: 63.5rem;
+  }
+
 }
 
 @media screen and (max-width: 875px) {
 
   .webpage-container .about-page-grid {
     display: block;
+  }
+
+  .cropped {
+    display: none;
+  }
+
+  .fern-img {
+    display: none;
   }
 
   .about-page-grid p {
@@ -129,10 +151,15 @@
   }
 
   .fern-rotated-img {
-    background: url(images/ferns-smaller.jpg) no-repeat;
+    display: block;
+    background: url(images/creme_fraiche_1.jpg) no-repeat;
     background-size: cover;
-    height: 20rem;
+    background-position: 0 -35px;
     margin-bottom: 3rem;
+    height: 30rem;
+    box-shadow: 5px 5px 20px grey;
+    border-radius: 15px;
+    border: 3px solid rgb(40, 88, 107);
   }
 
 }

@@ -7,6 +7,9 @@
   background-position: 0 -100px;
   height: 40rem;
   margin: 3rem 0;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
 }
 
 .blog-post-two-img {
@@ -15,6 +18,9 @@
   background-position: 0 -100px;
   height: 40rem;
   margin: 3rem 0;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
 }
 
 .blog-post-three-img {
@@ -23,6 +29,9 @@
   background-position: 0 -100px;
   height: 40rem;
   margin: 3rem 0;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
 }
 
 .blog-post {

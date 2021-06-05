@@ -38,7 +38,7 @@
 }
 
 .donate-img {
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
   box-shadow: 5px 5px 20px grey;
   border-radius: 15px;
@@ -47,6 +47,7 @@
 
 .donate-img-box {
   text-align: center;
+  margin: 3rem 0;
 }
 
 @media screen and (max-width: 1025px) {

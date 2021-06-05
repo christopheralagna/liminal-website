@@ -10,6 +10,19 @@
   height: 20rem;
 }
 
+.creme-fraiche {
+  max-width: 60%;
+  height: auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107);
+}
+
+.education-img-box {
+  text-align: center;
+  margin: 3rem 0;
+}
+
 .teaching-questions {
   margin: 3rem auto;
   border-top: 1px solid grey;
