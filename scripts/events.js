@@ -127,6 +127,15 @@ function displayEvents(type) {
   })
 }
 
+function reverseOrder() {
+  const events = document.querySelectorAll(".event");
+  events.forEach(event => {
+    if (event.style.display != 'none') {
+
+    }
+  })
+}
+
 function handleCurrentEvents() {
   highlightCurrentButton();
   handleEmptyMessage("current");
@@ -137,6 +146,7 @@ function handlePastEvents() {
   highlightPastButton();
   handleEmptyMessage("past");
   displayEvents("past");
+  reverseOrder();
 }
 
 currentButton.onclick = handleCurrentEvents;
