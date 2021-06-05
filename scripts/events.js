@@ -31,6 +31,7 @@ function getDate(event) {
 
 function isCurrent(date) {
   currentDate = new Date();
+  currentDate.setHours(0,0,0,0);
   if (date >= currentDate) {
     return true;
   } else {
