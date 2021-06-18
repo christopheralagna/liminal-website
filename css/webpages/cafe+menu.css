@@ -11,7 +11,7 @@
 }
 
 .cafe-img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   box-shadow: 5px 5px 20px grey;
   border-radius: 15px;
@@ -21,6 +21,8 @@
 .cafe-img-box {
   text-align: center;
   margin: 3rem auto;
+  border-bottom: 1px solid grey;
+  padding-bottom: 3rem;
 }
 
 #cafe-menu p {
