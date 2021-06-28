@@ -1,7 +1,7 @@
 
 let currentButton = document.querySelector(".current");
 let pastButton = document.querySelector(".past");
-let pastReversed = false;
+let start = true;
 
 const wideScreenQuery = window.matchMedia('(min-width: 1025px)');
 
@@ -140,6 +140,7 @@ function reverseOrder() {
   array.forEach(e => {
     eventList.appendChild(e);
   })
+  start = false;
 }
 
 function handleCurrentEvents() {
@@ -152,10 +153,13 @@ function handlePastEvents() {
   highlightPastButton();
   handleEmptyMessage("past");
   displayEvents("past");
+  if (start == true) {
+    reverseOrder();
+  }
 }
 
 //This reverses all past events on startup of webpage
-reverseOrder();
+
 
 currentButton.onclick = handleCurrentEvents;
 pastButton.onclick = handlePastEvents;
