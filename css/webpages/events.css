@@ -10,6 +10,15 @@
 .event-description {
   flex-basis: 60%;
   margin-left: 5rem;
+  margin: 3rem 0;
+}
+
+h2 {
+  margin: 0 auto 1.5rem;
+}
+
+.event-description p {
+  margin: 1.5rem auto 0;
 }
 
 .succulents-img {
@@ -27,7 +36,7 @@
 .opening_night_flyer-img {
   background: url(images/opening_night_flyer.jpg) no-repeat;
   margin: 3rem;
-  max-width: 30rem;
+  width: 30rem;
   height: auto;
   box-shadow: 5px 5px 20px grey;
   border-radius: 15px;
