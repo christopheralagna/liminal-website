@@ -66,10 +66,11 @@
 */
 
 .about-page-grid .fern-img {
-  width: 100rem;
+  width: 115rem;
   height: auto;
   position: relative;
-  right: 350px;
+  right: 400px;
+  top: 0px;
 }
 
 .cropped {
@@ -92,8 +93,22 @@
   max-width: 40%;
 }
 
+.long-shot-front {
+  display: block;
+  padding: 3rem 0;
+  border-top: 1px solid grey;
+}
+
 .subtext {
   text-align: center;
+}
+
+.front-photo {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 20px grey;
+  border-radius: 15px;
+  border: 3px solid rgb(40, 88, 107)
 }
 
 .artroom-photo {
@@ -183,14 +198,22 @@
 
   .fern-rotated-img {
     display: block;
-    background: url(images/creme_fraiche_1.jpg) no-repeat;
+    background: url(images/long-shot-community-table.png) no-repeat;
     background-size: cover;
-    background-position: 0 -35px;
+    background-position: 0 -100px;
     margin-bottom: 3rem;
     height: 30rem;
     box-shadow: 5px 5px 20px grey;
     border-radius: 15px;
     border: 3px solid rgb(40, 88, 107);
+  }
+
+}
+
+@media screen and (max-width: 600px){
+
+  .fern-rotated-img {
+    background-position: 0 0px;
   }
 
 }
