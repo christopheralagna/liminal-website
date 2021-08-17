@@ -8,8 +8,8 @@
   grid-template-rows: auto;
   /*grid-template-rows: 5rem repeat(5, 17rem) 5rem;*/
   grid-template-areas:
+    "overview      fern-img"
     "the-name      fern-img"
-    "what-we-offer fern-img"
     "the-mission   fern-img"
     "theory-praxis fern-img";
   column-gap: 10rem;
