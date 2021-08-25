@@ -61,9 +61,9 @@
 */
 
 .flower-img {
-  background: url(../webpages/images/community-table.jpeg) no-repeat;
+  background: url(../webpages/images/front-of-building.jpg) no-repeat;
   background-size: cover;
-  background-position: 0 -200px;
+  background-position: 0 0px;
   width: auto;
   height: 22rem;
   margin: 0 auto;
@@ -80,7 +80,7 @@
   height: 25rem;
   margin: 0 auto;
 }
-
+/*
 @media screen and (max-width: 900px) {
 
   .flower-img {
@@ -96,7 +96,7 @@
   }
 
 }
-
+*/
 /*
 
 @media screen and (max-width: 1250px) {
