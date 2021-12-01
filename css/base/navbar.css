@@ -12,7 +12,7 @@
   list-style-type: none;
   display: flex;
   justify-content: left;
-  align-content: center;
+  align-items: center;
   padding: var(--links-padding) 0;
   margin: 0;
 }
@@ -50,11 +50,16 @@
   border-bottom: 1px solid rgba(0,0,0,0);
 }
 
+.sublink {
+  vertical-align: middle;
+}
+
 .sublinks {
   display: flex;
   padding: 0;
   width: 65vw;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-bar .links .current-link {
