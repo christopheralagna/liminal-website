@@ -74,12 +74,19 @@ function pastEventsExist() {
 
 function createEmptyMessage(type) {
   let emptyMessage = document.createElement("p");
+  let a = document.createElement('a');
   emptyMessage.classList.add("empty-message");
+  emptyMessage.appendChild(a);
+  a.classList.add("empty-message-one");
   if (type == "current") {
-    emptyMessage.innerHTML = "No Upcoming Events";
+    //emptyMessage.innerHTML = "No Upcoming Events";
+    a.innerHTML = "Click here to view upcoming events";
+    a.href = "https://www.eventbrite.com/o/liminal-flagstaff-33232960629#events";
+    a.target = "_blank"
   } else if (type == "past") {
     emptyMessage.innerHTML = "No Past Events";
   }
+  //document.querySelector(".event-list").appendChild(emptyMessage);
   document.querySelector(".event-list").appendChild(emptyMessage);
 }
 

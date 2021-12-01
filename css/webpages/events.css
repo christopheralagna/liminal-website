@@ -86,12 +86,23 @@ h2 {
 }
 
 .empty-message {
-  color: rgb(150,150,150);
   font-size: 1.8rem;
   padding: 6rem 0;
   border-top: 1px solid grey;
   margin: 0;
   text-align: center;
+}
+
+.empty-message-one {
+  color: rgb(155, 101, 40);
+}
+
+.empty-message-one:hover {
+  color: rgb(189, 125, 53)
+}
+
+.empty-message-one:active {
+  color:rgb(221, 189, 153)
 }
 
 .events-jar-img {
