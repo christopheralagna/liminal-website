@@ -95,11 +95,15 @@
 
 .long-shot-front {
   display: block;
-  padding: 3rem 0;
+  padding: 1.5rem;
   /*border-top: 1px solid grey;*/
 }
 
 .subtext {
+  text-align: center;
+}
+
+.img-description {
   text-align: center;
 }
 
