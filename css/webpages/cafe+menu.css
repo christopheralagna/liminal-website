@@ -45,14 +45,14 @@
 .beverages {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
-  padding-top: 3rem;
-  border-top: 1px solid grey;
-  padding-bottom: 3rem;
 }
 
 .beverages .list {
   text-align: right;
+}
+
+.beverages h2 {
+  
 }
 
 .small-plates {
@@ -67,7 +67,8 @@
 }
 
 .small-plates .list {
-  flex-basis: 70%;
+  flex-basis: 50%;
+  text-align: right;
 }
 
 .a-note-on-payment {
@@ -104,9 +105,7 @@
     padding-bottom: 0;
   }
 
-  .small-plates .list {
-    flex-basis: 65%;
-  }
+
 
 }
 
@@ -148,6 +147,10 @@
   .beverages .list {
     text-align: left;
     list-style-type: circle;
+  }
+
+  .small-plates .list {
+    text-align: left;
   }
 
   .small-plates {
