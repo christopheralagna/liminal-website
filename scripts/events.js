@@ -1,9 +1,13 @@
 
+let calendar = document.querySelector(".calendar");
+
 let currentButton = document.querySelector(".current");
 let pastButton = document.querySelector(".past");
 let start = true;
 
 const wideScreenQuery = window.matchMedia('(min-width: 1025px)');
+
+/*
 
 function highlightCurrentButton() {
   //currentButton.style.color = "var(--black-primary)";
@@ -180,9 +184,28 @@ function handleScreenChange(e) {
   };
 }
 
-//these functions automatically call handleEvents() on startup
+*/
+
+function handleScreenChange(e) {
+  //match = greater than 1025
+  
+
+  if (wideScreenQuery.matches && calendar.hidden == true) {
+    calendar.hidden = false;
+  } else if (!wideScreenQuery.matches && calendar.hidden == false) {
+    calendar.hidden = true;
+  };
+}
+
+if (wideScreenQuery.matches) {
+  wideScreenQuery.addListener(handleScreenChange);
+  handleScreenChange(wideScreenQuery);
+}
+
 wideScreenQuery.addListener(handleScreenChange);
 handleScreenChange(wideScreenQuery);
+//these functions automatically call handleEvents() on startup
+
 
 
 
