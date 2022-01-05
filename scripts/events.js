@@ -1,11 +1,7 @@
 
-let calendar = document.querySelector(".calendar");
-
 let currentButton = document.querySelector(".current");
 let pastButton = document.querySelector(".past");
 let start = true;
-
-const wideScreenQuery = window.matchMedia('(min-width: 1025px)');
 
 /*
 
@@ -184,16 +180,44 @@ function handleScreenChange(e) {
   };
 }
 
+
+
 */
 
-function handleScreenChange(e) {
-  //match = greater than 1025
-  
+const weeklyCalendar = document.createElement("div");
+weeklyCalendar.classList.add("smgc-calendar-placeholder");
+weeklyCalendar.setAttribute('id', 'smgc-cal-wZh16t0xoCxgECdB2TsF');
 
-  if (wideScreenQuery.matches && calendar.hidden == true) {
-    calendar.hidden = false;
-  } else if (!wideScreenQuery.matches && calendar.hidden == false) {
-    calendar.hidden = true;
+const monthlyCalendar = document.createElement("div");
+monthlyCalendar.classList.add("smgc-calendar-placeholder");
+monthlyCalendar.setAttribute('id', 'smgc-cal-tN1fajimUpyfhbmquxj3');
+
+let calendar = document.querySelector(".calendar");
+
+const wideScreenQuery = window.matchMedia('(min-width: 935px)');
+
+function handleScreenChange(e) {
+  //match = greater than 1025 
+
+  if (wideScreenQuery.matches) {
+
+    if (calendar.contains(weeklyCalendar)) {
+      calendar.removeChild(weeklyCalendar);
+    }
+    if (!calendar.contains(monthlyCalendar)) {
+      calendar.appendChild(monthlyCalendar);
+    }
+    console.log(calendar)
+   
+  } 
+  else {
+
+    if (calendar.contains(monthlyCalendar)) {
+      calendar.removeChild(monthlyCalendar);
+    }
+    calendar.appendChild(weeklyCalendar);
+    console.log(calendar)
+    
   };
 }
 

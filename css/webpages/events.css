@@ -18,10 +18,37 @@
   list-style-type: disc;
 }
 
+/*
 .calendar {
   height: 83%;
   margin-top: 3rem;
 }
+*/
+
+.eventbrite-link {
+  color: var(--black-primary);
+  background-color: var(--color-nav);
+  border-radius: 5px;
+  border: none;
+  padding: .65rem 1.5rem;
+  font-size: 1.78rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--black-secondary) 1px 1px 5px;
+}
+
+.eventbrite-link:hover {
+  cursor: pointer;
+}
+
+.eventbrite-link:active {
+  box-shadow: var(--black-secondary) .5px .5px 5px;
+}
+
+.eventbrite-link a {
+  text-decoration: none;
+  color: var(--black-primary)
+}
+
 
 
 /*
