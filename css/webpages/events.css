@@ -9,6 +9,14 @@
   /* display established in events script */
 }
 
+.event-title {
+  text-align: center;
+}
+
+.event-date-time {
+  text-align: center;
+}
+
 .event-description {
   flex-basis: 65%;
   margin-left: 5rem;
@@ -76,6 +84,7 @@ h2 {
 .img-container {
   flex-basis: 35%;
   margin: auto 0;
+  text-align: center;
 }
 
 .event-img {
@@ -160,13 +169,17 @@ h2 {
 
   /* EVENTS PAGE */
 
-  #events h2 {
-    line-height: 3.5rem;
-  }
-
   .event-img {
     width: 32rem;
     max-width: 100%;
+  }
+
+  .event {
+    display: block;
+  }
+
+  .img-container {
+    max-width: 70rem;
   }
 
   .opening_night_flyer-img {
