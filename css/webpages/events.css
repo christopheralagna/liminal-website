@@ -9,6 +9,62 @@
   /* display established in events script */
 }
 
+
+
+
+.event- {
+  align-self: center;
+  
+}
+
+.event- p {
+  margin: 0;
+  line-height: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 6rem 6rem;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding-top: 6rem;
+}
+
+.event-img- {
+  max-width: 100%;
+  
+
+  box-shadow: 5px 5px 10px 5px grey;
+  border-radius: 15px;
+}
+
+.event-img-container {
+  
+}
+
+.event- h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.event-time- {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.event-header- {
+  height: 30%;
+}
+
+
+
+
+
+
+
+
 .event-title {
   text-align: center;
 }
@@ -20,6 +76,11 @@
 .event-description {
   flex-basis: 65%;
   margin-left: 5rem;
+}
+
+.times {
+  display: flex;
+  justify-content: space-around;
 }
 
 .hold-workshop ul {
